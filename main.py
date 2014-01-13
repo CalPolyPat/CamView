@@ -95,9 +95,9 @@ class MyApp(App):
                 self.cam.play=True         #Start the camera
                 self.layout.add_widget(self.cam)
                 if self.runnum == 0:
-                    self.cam.bind(on_touch_down = lambda x,y: self.analyze())
+                    self.cam.bind(on_touch_down = lambda x,y: self.analyze)
                 if self.runnum == 1:
-                    self.cam.bind(on_touch_down = lambda x,y: self.analyzetwo())
+                    self.cam.bind(on_touch_down = lambda x,y: self.analyzetwo)
 
                 with self.cam.canvas:
                     Color(.5,.5,.5,.25)
